@@ -1,12 +1,17 @@
 html {
+    color:rgba(255, 255, 255, 0.668);
     padding:0;
     margin:0;
     box-sizing:border-box;
     overflow-y:hidden;
+    background:black;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 :root {
-    --accent-color:#596D48;
+    --accent-color:#e6007e;
+    --shadow-color:#626262;
 }
 
 
@@ -17,7 +22,7 @@ html {
 
 
 .leaf-container {
-    background-image:url('img/bg-img.jpg');
+    background-image:url('img/milad-fakurian-nY14Fs8pxT8-unsplash.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -26,35 +31,14 @@ html {
     position:relative;
 }
 
-.banner {
-    background-color:rgba(0,0,0,.5);
-    width:100%;
-    height:20%;
-    position:absolute;
-    top:20%;
-}
 
-.name {
-    font-family:norseBold;
-    color:white;
-    font-size:6.5rem;
-    position:relative;
-    left:45%;
-}
 
-.name::before {
-    content:url('img/odin.png');
-    position:absolute;
-    left:-18%;
-    top:8%;
 
-}
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 
 p {
-    font-family:'Open Sans', sans-serif;
-    font-weight:bold;
+    font-family: apercu-pro, -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
 }
 
 span {
@@ -67,6 +51,7 @@ span {
     top:100px;
     margin-left:45%;
     font-size:1.3rem;
+    font-family: apercu-pro, -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
 }
 
 @media(max-width:400px) {
@@ -78,8 +63,8 @@ span {
 .login-card{
     width:100%;
     height:35%;
-    background-color:rgb(255, 255, 255);
-    box-shadow: 0 3px 15px rgb(0 0 0 / 0.2);
+    background-color:rgb(0, 0, 0);
+    box-shadow: 0 1px 8px #303030;
 }
 
 .container{
@@ -91,51 +76,50 @@ span {
 }
 
 .header {
-    font-family:'Open Sans', sans-serif;
+    font-family: apercu-pro, -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
     font-weight:bold;
     font-size:1.3rem;
     padding:1em;
-    padding-left:3.6em;
+    padding-left:3.1em;
 }
 
 .fninput {
     position:absolute;
     top:85px;
-    margin-left:4.6em;
+    margin-left:4.1em;
 }
 
 .firstname {
     font-family:'Open Sans', sans-serif;
-    letter-spacing:0.1rem;
     position:absolute;
     top:60px;
     left:10px;
     margin-left:5em;
-    font-size:0.8rem;
+    font-size:0.7rem;
 }
 
 .lninput {
     position:absolute;
     top:85px;
-    margin-left:20em;
+    margin-left:27em;
 }
 
 .lastname {
     font-family:'Open Sans', sans-serif;
-    letter-spacing:0.1rem;
+
     position:absolute;
     top:60px;
-    margin-left:25em;
-    font-size:0.8rem;
+    margin-left:38.6em;
+    font-size:0.7rem;
 }
 input {
-    border:1px solid #E5E7EB;
+    border:1px solid #303030;
+    background-color:black;
     border-radius:4px;
     
 }
 input:focus {
     border:1px solid var(--accent-color);
-    box-shadow: 0 6px 30px rgb(0 0 0 / 0.2);
     outline:none;
 
 }
@@ -153,96 +137,86 @@ input[type='password'] {
 .emailinput {
     position:absolute;
     top:150px;
-    margin-left:4.6em;
+    margin-left:4.1em;
 }
 
 .email {
     font-family:'Open Sans', sans-serif;
-    letter-spacing:0.1rem;
+
     position:absolute;
     top:130px;
     left:10px;
     margin-left:5em;
-    font-size:0.8rem;
+    font-size:0.7rem;
 }
 
 .telinput {
     position:absolute;
     top:150px;
-    margin-left:20em;
+    margin-left:27em;
 }
 
 .tel {
     font-family:'Open Sans', sans-serif;
-    letter-spacing:0.1rem;
+
     position:absolute;
     top:130px;
-    margin-left:25em;
-    font-size:0.8rem;
+    margin-left:38.6em;
+    font-size:0.7rem;
 }
 
 .pwdinput {
     position:absolute;
     top:220px;
-    margin-left:4.6em;
+    margin-left:4.1em;
 }
 
 .pwd {
     font-family:'Open Sans', sans-serif;
-    letter-spacing:0.1rem;
+
     position:absolute;
     top:200px;
     left:10px;
     margin-left:5em;
-    font-size:0.8rem;
+    font-size:0.7rem;
 }
 
 .cpwdinput {
     position:absolute;
     top:220px;
-    margin-left:20em;
+    margin-left:27em;
 }
 
 .cpwd {
     font-family:'Open Sans', sans-serif;
-    letter-spacing:0.1rem;
+
     position:absolute;
     top:200px;
-    margin-left:25em;
-    font-size:0.8rem;
+    margin-left:38.6em;
+    font-size:0.7rem;
 }
-
-.cpwdinput:valid {
-    border:2px solid #596D48;
-    outline:none;
-}
-
-.cpwdinput:invalid {
-    border:2px solid red;
-    outline:none;
-}
-
-.pwdinput:valid {
-    border:2px solid #596D48;
-    outline:none;
-}
-
-.pwdinput:invalid {
-    border:2px solid red;
-    outline:none;
+input {
+    width:35%;
+    height:3%;
 }
 
 .btn {
     position:absolute;
     top:300px;
     left:72px;
-    padding:0.6em 1.5em;
-    background-color:var(--accent-color);
-    border:none;
-    color:white;
+    padding:0.5em 2.5em;
+    background-color:black;
+    border:2px solid var(--accent-color);
+    color:var(--accent-color);
     font-family:'Open Sans', sans-serif;
     font-weight:bold;
     border-radius:8px;
+    font-size:1.2em;
+}
+
+.btn:hover {
+    background-color:var(--accent-color);
+    color:black;
 }
 
 .login {
@@ -272,4 +246,12 @@ input[type='password'] {
     font-size:0.6rem;
     left:10px;
     
+}
+
+label {
+    color:var(--shadow-color);
+}
+
+input {
+    color:var(--shadow-color);
 }
